@@ -7,7 +7,7 @@ from lens_image import *
 from half_light import *
 from weight_func import *
 
-@profile
+#@profile
 def main():
     fmax = 1.0
     eps = 0.0
@@ -38,10 +38,10 @@ def main():
     gamma2=0.0
     A1=np.array([[1.0-kappa-gamma1,-gamma2],[-gamma2,1-kappa+gamma1]])
 
-    g11= 0.001
-    g12= 0.002
-    g21= 0.003
-    g22= 0.004
+    g11= 0.02
+    g12= 0.01
+    g21= 0.00
+    g22=-0.00
 
     D1=np.zeros((2,2,2))
     D1[0,0,0]=-2.0*g11-g22
@@ -74,18 +74,17 @@ def main():
     print 'F2 = %f' %(fm[1])
     print 'G1 = %f' %(fm[2])
     print 'G2 = %f' %(fm[3])
+##--------------------------------------------------------------------
+    #levels = [0.0,0.15,0.30,0.45,0.60,0.75,0.90,1.05]
+    figure(num=None,figsize=(10,5),dpi=80, facecolor='w', edgecolor='k')
 
+    a = axes([0.05,0.1,0.4,0.8])
+    a.imshow(img_source)
+
+    b = axes([0.55,0.1,0.4,0.8])
+    b.imshow(zz)
+    show()
     return 0
 
-##--------------------------------------------------------------------
-#levels = [0.0,0.15,0.30,0.45,0.60,0.75,0.90,1.05]
-#figure(num=None,figsize=(10,5),dpi=80, facecolor='w', edgecolor='k')
-#
-#a = axes([0.05,0.1,0.4,0.8])
-#a.imshow(img_source)
-#
-#b = axes([0.55,0.1,0.4,0.8])
-#b.imshow(zz)
-#show()
 if __name__ == '__main__':
     main()
