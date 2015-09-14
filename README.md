@@ -8,11 +8,15 @@ Goldberg's flexion code in IDL. ( http://www.physics.drexel.edu/~goldberg/flexio
 ![Figure 1](./Figures/figure_1.png)
 Figure.1: It shows the input simulated lensed image with flexions. In left panel, it is the unlensed source, it is perfect circle Gaussian; In right panel, it is lensed images.
 
+<<<<<<< HEAD
 	```bash
 	$ python2.7 wf_selection.py
 	```
 
 ![Figure 2](./Figures/C_W.pdf)
+=======
+![Figure 2](./Figures/C_W.jpg)
+>>>>>>> 47a8749d7abe5e1687fe21bac2bbd1b76a585b04
 Figure.2: Figure 2 and Figure 3 in [Goldberg et al 2007](http://arxiv.org/pdf/astro-ph/0607602v2.pdf) can be rebuild using this python code. 
 
 	```bash
