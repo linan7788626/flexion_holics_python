@@ -6,7 +6,7 @@ This python code is translated from
 
 
 It includes two parts:
-### Ilustrating what flexion is (see Fig. 1).
+### Illustrating what flexion is (see Fig. 1).
 Use the command below to rebuild Fig. 1.
 ```bash
 $ python2.7 show_flexion.py
